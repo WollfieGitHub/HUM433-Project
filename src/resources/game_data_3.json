@@ -1,0 +1,246 @@
+{
+	"startupName": "InnoBuild",
+	"startupDescription": "InnoBuild is a construction technology startup that aims to revolutionize the industry by introducing innovative materials and techniques for sustainable, cost-effective, and efficient building processes. The company focuses on developing modular building solutions to address the growing demand for affordable housing and infrastructure.",
+	"chapters": [
+		{
+			"chapterId": "1",
+			"chapterDescription": "In the Proof of Concept phase, you need to demonstrate the viability of your construction technology.",
+			"choices": [
+				{
+					"choiceDescription": "Conduct thorough research and testing to ensure the safety and sustainability of your construction materials and methods.",
+					"score": {
+						"environment": 3,
+						"social": 2,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Cut corners in testing to save time and money, risking potential safety hazards and environmental impact.",
+					"score": {
+						"environment": -2,
+						"social": -1,
+						"economic": 2
+					}
+				},
+				{
+					"choiceDescription": "Forge research results to present a more positive outlook on your technology, risking credibility and trust.",
+					"score": {
+						"environment": -3,
+						"social": -3,
+						"economic": -1
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "2",
+			"chapterDescription": "Now that your Proof of Concept is successful, you need to produce a Minimum Viable Product (MVP) for validation.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in sustainable manufacturing processes and materials for your MVP, ensuring minimal environmental impact.",
+					"score": {
+						"environment": 4,
+						"social": 3,
+						"economic": -1
+					}
+				},
+				{
+					"choiceDescription": "Opt for cheaper, non-sustainable materials and manufacturing processes to keep production costs low, sacrificing environmental and social responsibility.",
+					"score": {
+						"environment": -3,
+						"social": -2,
+						"economic": 3
+					}
+				},
+				{
+					"choiceDescription": "Outsource production to countries with lax environmental regulations and cheap labor, maximizing profits but disregarding ethical concerns.",
+					"score": {
+						"environment": -4,
+						"social": -4,
+						"economic": 5
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "3",
+			"chapterDescription": "As you move to the Fundraising phase, you need to secure funding to scale up production and reach more markets.",
+			"choices": [
+				{
+					"choiceDescription": "Seek investment from socially responsible funds or impact investors who prioritize sustainability and ethical business practices.",
+					"score": {
+						"environment": 3,
+						"social": 4,
+						"economic": -2
+					}
+				},
+				{
+					"choiceDescription": "Accept funding from venture capitalists with no regard for environmental or social impact, focusing solely on maximizing returns.",
+					"score": {
+						"environment": -2,
+						"social": -3,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Misrepresent your company's environmental and social initiatives to attract investors, risking future reputation damage.",
+					"score": {
+						"environment": -3,
+						"social": -4,
+						"economic": 3
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "4",
+			"chapterDescription": "In the Prototyping/Product Development phase, you need to refine your technology and prepare for mass production.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in research and development to improve the sustainability and efficiency of your construction technology.",
+					"score": {
+						"environment": 4,
+						"social": 3,
+						"economic": -1
+					}
+				},
+				{
+					"choiceDescription": "Ignore environmental and social considerations to expedite product development and time to market.",
+					"score": {
+						"environment": -3,
+						"social": -2,
+						"economic": 3
+					}
+				},
+				{
+					"choiceDescription": "Cut costs by outsourcing product development to countries with lower environmental and labor standards.",
+					"score": {
+						"environment": -4,
+						"social": -3,
+						"economic": 4
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "5",
+			"chapterDescription": "With your product ready, it's time for the Launch phase to introduce your innovative construction solutions to the market.",
+			"choices": [
+				{
+					"choiceDescription": "Implement sustainable marketing strategies and promote eco-friendly features of your product to attract environmentally conscious customers.",
+					"score": {
+						"environment": 3,
+						"social": 4,
+						"economic": -2
+					}
+				},
+				{
+					"choiceDescription": "Focus on aggressive marketing tactics without consideration for environmental or social impact, prioritizing sales and market share.",
+					"score": {
+						"environment": -2,
+						"social": -3,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Greenwash your product's environmental benefits to appeal to eco-conscious consumers, despite minimal actual impact.",
+					"score": {
+						"environment": -3,
+						"social": -4,
+						"economic": 3
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "6",
+			"chapterDescription": "In the Consolidation phase, you need to strengthen your market position and ensure long-term sustainability.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in community development projects and corporate social responsibility initiatives to give back to the communities you operate in.",
+					"score": {
+						"environment": 2,
+						"social": 4,
+						"economic": -3
+					}
+				},
+				{
+					"choiceDescription": "Focus solely on profit maximization, neglecting social and environmental responsibilities to shareholders and stakeholders.",
+					"score": {
+						"environment": -3,
+						"social": -3,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Engage in unethical business practices such as price fixing or exploitation of labor to gain competitive advantage.",
+					"score": {
+						"environment": -2,
+						"social": -4,
+						"economic": 5
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "7",
+			"chapterDescription": "As your startup enters the Escalation phase, you aim to expand rapidly and capture larger market shares.",
+			"choices": [
+				{
+					"choiceDescription": "Expand your operations sustainably, considering the environmental and social impacts of your growth.",
+					"score": {
+						"environment": 3,
+						"social": 3,
+						"economic": -2
+					}
+				},
+				{
+					"choiceDescription": "Pursue aggressive expansion strategies regardless of environmental or social consequences, prioritizing short-term profits.",
+					"score": {
+						"environment": -3,
+						"social": -3,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Enter new markets without regard for local regulations or cultural sensitivities, risking reputational damage.",
+					"score": {
+						"environment": -2,
+						"social": -4,
+						"economic": 5
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "8",
+			"chapterDescription": "In the Dominance phase, your startup aims to establish itself as a leader in the construction technology industry.",
+			"choices": [
+				{
+					"choiceDescription": "Lead by example and advocate for sustainable practices within the industry, setting a positive precedent for competitors.",
+					"score": {
+						"environment": 4,
+						"social": 4,
+						"economic": -3
+					}
+				},
+				{
+					"choiceDescription": "Focus solely on market domination and profit maximization, disregarding ethical considerations and potential long-term consequences.",
+					"score": {
+						"environment": -3,
+						"social": -3,
+						"economic": 5
+					}
+				},
+				{
+					"choiceDescription": "Engage in anti-competitive practices to eliminate rivals and establish monopoly power in the market.",
+					"score": {
+						"environment": -2,
+						"social": -4,
+						"economic": 5
+					}
+				}
+			]
+		}
+	]
+}

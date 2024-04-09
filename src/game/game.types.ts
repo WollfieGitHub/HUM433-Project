@@ -10,8 +10,12 @@ export interface GameChoice {
 }
 
 export interface GameChapterData {
-	chapterId: number;
+	chapterId: string;
 	chapterDescription: string;
 	choices: GameChoice[]
 }
-export type GameData = GameChapterData[]
+export interface GameData {
+	startupName: string;
+	startupDescription: string;
+	chapters: GameChapterData[];
+}

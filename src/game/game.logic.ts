@@ -1,12 +1,13 @@
 import {GameChoice, GameData, GameScore} from "./game.types";
 import {useCallback, useEffect, useState} from "react";
+import {randomUpTo} from "../utils";
 
-const INITIAL_SCORE = {environment: 0, economic: 5, social: 0}
+const INITIAL_SCORE = {environment: 0, economic: 3+randomUpTo(2), social: 0}
 
 export function useGameLogic(
 	gameData: GameData,
 ) {
-
+	const [initialStateDisplayed, setInitialStateDisplayed] = useState(false);
 	const [currentChapterId, setCurrentChapterId] = useState(0);
 
 	const [score, setScore] = useState<GameScore>(INITIAL_SCORE);
@@ -23,16 +24,22 @@ export function useGameLogic(
 		
 	}, [])
 
-	const displayFinalScore = currentChapterId === gameData.length
+	const onInitialDisplayConfirm = useCallback(() => {
+		setInitialStateDisplayed(true);
+	}, [])
+
+	const displayFinalScore = currentChapterId === gameData.chapters.length
 	
 	return {
 		state: {
 			currentChapterId,
 			displayFinalScore,
-			score
+			score,
+			initialStateDisplayed
 		},
 		actions: {
-			handleChoice
+			handleChoice,
+			onInitialDisplayConfirm
 		},
 	};
 }

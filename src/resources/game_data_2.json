@@ -1,0 +1,246 @@
+{
+	"startupName": "EcoLux",
+	"startupDescription": "EcoLux is a luxury brand specializing in sustainable fashion. The startup aims to revolutionize the fashion industry by creating high-end clothing and accessories using environmentally friendly materials and ethical production practices.",
+	"chapters": [
+		{
+			"chapterId": "1",
+			"chapterDescription": "Proof of Concept: You have a unique idea for EcoLux, but you need to validate its feasibility.",
+			"choices": [
+				{
+					"choiceDescription": "Partner with a high-end fashion brand to conduct a market study.",
+					"score": {
+						"environment": 0,
+						"social": 10,
+						"economic": -5
+					}
+				},
+				{
+					"choiceDescription": "Use cheap, non-sustainable materials to create prototypes for testing.",
+					"score": {
+						"environment": -15,
+						"social": -5,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Organize focus groups with environmentally conscious consumers to gather feedback.",
+					"score": {
+						"environment": 5,
+						"social": 15,
+						"economic": -10
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "2",
+			"chapterDescription": "Production of MVP/Validation: You have proven that there is a demand for sustainable luxury fashion.",
+			"choices": [
+				{
+					"choiceDescription": "Source materials from suppliers with questionable labor practices to cut costs.",
+					"score": {
+						"environment": -10,
+						"social": -20,
+						"economic": 15
+					}
+				},
+				{
+					"choiceDescription": "Invest in research and development to create innovative sustainable fabrics.",
+					"score": {
+						"environment": 20,
+						"social": 10,
+						"economic": -15
+					}
+				},
+				{
+					"choiceDescription": "Outsource production to countries with weaker environmental regulations.",
+					"score": {
+						"environment": -15,
+						"social": -25,
+						"economic": 20
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "3",
+			"chapterDescription": "Fundraising: You need capital to scale up production and expand your market reach.",
+			"choices": [
+				{
+					"choiceDescription": "Accept funding from investors who prioritize profit over sustainability.",
+					"score": {
+						"environment": -5,
+						"social": -10,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Seek out impact investors who are aligned with your values.",
+					"score": {
+						"environment": 10,
+						"social": 15,
+						"economic": -10
+					}
+				},
+				{
+					"choiceDescription": "Crowdfund from a community of environmentally conscious supporters.",
+					"score": {
+						"environment": 15,
+						"social": 20,
+						"economic": -15
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "4",
+			"chapterDescription": "Prototyping/Product Development: You are refining your product and preparing for full-scale production.",
+			"choices": [
+				{
+					"choiceDescription": "Cut corners in product testing to save time and money.",
+					"score": {
+						"environment": -10,
+						"social": -15,
+						"economic": 15
+					}
+				},
+				{
+					"choiceDescription": "Invest in comprehensive testing to ensure product quality and safety.",
+					"score": {
+						"environment": 15,
+						"social": 10,
+						"economic": -15
+					}
+				},
+				{
+					"choiceDescription": "Partner with environmentally conscious suppliers for sustainable packaging.",
+					"score": {
+						"environment": 20,
+						"social": 15,
+						"economic": -10
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "5",
+			"chapterDescription": "Launch: It's time to introduce EcoLux to the world.",
+			"choices": [
+				{
+					"choiceDescription": "Market aggressively, exaggerating EcoLux's environmental credentials.",
+					"score": {
+						"environment": -15,
+						"social": -20,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Educate consumers about the importance of sustainable fashion through marketing campaigns.",
+					"score": {
+						"environment": 15,
+						"social": 20,
+						"economic": -10
+					}
+				},
+				{
+					"choiceDescription": "Offer discounts to encourage fast fashion enthusiasts to switch to sustainable options.",
+					"score": {
+						"environment": -10,
+						"social": -15,
+						"economic": 15
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "6",
+			"chapterDescription": "Consolidation: EcoLux has gained traction in the market, but faces growing competition.",
+			"choices": [
+				{
+					"choiceDescription": "Lower prices by compromising on sustainability to maintain market share.",
+					"score": {
+						"environment": -10,
+						"social": -15,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Differentiate EcoLux by emphasizing its commitment to sustainability.",
+					"score": {
+						"environment": 20,
+						"social": 15,
+						"economic": -10
+					}
+				},
+				{
+					"choiceDescription": "Expand into new markets with less stringent environmental regulations.",
+					"score": {
+						"environment": -15,
+						"social": -20,
+						"economic": 20
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "7",
+			"chapterDescription": "Escalation: EcoLux is growing rapidly, but faces ethical dilemmas as it scales.",
+			"choices": [
+				{
+					"choiceDescription": "Ignore reports of unethical practices in your supply chain to focus on expansion.",
+					"score": {
+						"environment": -15,
+						"social": -20,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Invest in supply chain transparency and audit suppliers regularly.",
+					"score": {
+						"environment": 20,
+						"social": 15,
+						"economic": -10
+					}
+				},
+				{
+					"choiceDescription": "Donate a portion of profits to environmental causes to offset negative impacts.",
+					"score": {
+						"environment": 10,
+						"social": 20,
+						"economic": -15
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "8",
+			"chapterDescription": "Dominance of the Startup: EcoLux has become a leader in sustainable luxury fashion.",
+			"choices": [
+				{
+					"choiceDescription": "Acquire smaller competitors to strengthen your market position.",
+					"score": {
+						"environment": -10,
+						"social": -15,
+						"economic": 20
+					}
+				},
+				{
+					"choiceDescription": "Collaborate with other industry leaders to promote sustainable practices.",
+					"score": {
+						"environment": 20,
+						"social": 15,
+						"economic": -10
+					}
+				},
+				{
+					"choiceDescription": "Exploit your dominant position to increase prices and maximize profits.",
+					"score": {
+						"environment": -15,
+						"social": -20,
+						"economic": 20
+					}
+				}
+			]
+		}
+	]
+}

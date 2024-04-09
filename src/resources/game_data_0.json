@@ -1,0 +1,246 @@
+{
+	"startupName": "EcoSolutions",
+	"startupDescription": "EcoSolutions is a startup aimed at providing sustainable alternatives to everyday products. The company focuses on creating eco-friendly products that reduce environmental impact while maintaining affordability and accessibility for consumers.",
+	"chapters": [
+		{
+			"chapterId": "1",
+			"chapterDescription": "Your startup, EcoSolutions, is in its early stages. You're working on proving the concept of your eco-friendly product line.",
+			"choices": [
+				{
+					"choiceDescription": "Conduct market research to understand consumer demand for eco-friendly products.",
+					"score": {
+						"environment": 2,
+						"social": 1,
+						"economic": -1
+					}
+				},
+				{
+					"choiceDescription": "Ignore market research and proceed with product development based on personal assumptions.",
+					"score": {
+						"environment": 1,
+						"social": -2,
+						"economic": 1
+					}
+				},
+				{
+					"choiceDescription": "Cut corners on environmental standards to expedite product development.",
+					"score": {
+						"environment": -3,
+						"social": -1,
+						"economic": 3
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "2",
+			"chapterDescription": "You've developed a minimum viable product (MVP) and are ready to validate it in the market.",
+			"choices": [
+				{
+					"choiceDescription": "Conduct beta testing with a focus group to gather feedback on product performance and sustainability.",
+					"score": {
+						"environment": 3,
+						"social": 2,
+						"economic": -1
+					}
+				},
+				{
+					"choiceDescription": "Launch the MVP without testing to capitalize on early market entry.",
+					"score": {
+						"environment": -2,
+						"social": -1,
+						"economic": 3
+					}
+				},
+				{
+					"choiceDescription": "Misrepresent the product's sustainability to boost sales.",
+					"score": {
+						"environment": -4,
+						"social": -3,
+						"economic": 5
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "3",
+			"chapterDescription": "You're in the process of fundraising to scale up production and expand market reach.",
+			"choices": [
+				{
+					"choiceDescription": "Seek funding from impact investors who prioritize both financial return and social/environmental impact.",
+					"score": {
+						"environment": 3,
+						"social": 4,
+						"economic": 2
+					}
+				},
+				{
+					"choiceDescription": "Accept funding from traditional investors regardless of their values or impact priorities.",
+					"score": {
+						"environment": -1,
+						"social": -2,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Engage in greenwashing to attract investors by exaggerating the company's environmental commitment.",
+					"score": {
+						"environment": -3,
+						"social": -4,
+						"economic": 5
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "4",
+			"chapterDescription": "With funding secured, you're focused on prototyping and further developing your products.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in research and development to enhance product sustainability without compromising quality.",
+					"score": {
+						"environment": 4,
+						"social": 3,
+						"economic": -2
+					}
+				},
+				{
+					"choiceDescription": "Cut costs by using cheaper, less sustainable materials in product development.",
+					"score": {
+						"environment": -3,
+						"social": -2,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Outsource production to countries with lax environmental regulations to save on manufacturing costs.",
+					"score": {
+						"environment": -5,
+						"social": -4,
+						"economic": 6
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "5",
+			"chapterDescription": "Your product is ready for launch, and you're planning your marketing strategy.",
+			"choices": [
+				{
+					"choiceDescription": "Emphasize the sustainability and environmental benefits of your product in marketing campaigns.",
+					"score": {
+						"environment": 5,
+						"social": 4,
+						"economic": 1
+					}
+				},
+				{
+					"choiceDescription": "Focus solely on product features and price, neglecting to mention its environmental aspects.",
+					"score": {
+						"environment": -2,
+						"social": -3,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Greenwash your marketing materials to exaggerate the product's environmental impact.",
+					"score": {
+						"environment": -4,
+						"social": -5,
+						"economic": 6
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "6",
+			"chapterDescription": "Your startup is gaining traction, and you're working on consolidating your position in the market.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in sustainable packaging and supply chain practices to reduce your environmental footprint.",
+					"score": {
+						"environment": 6,
+						"social": 5,
+						"economic": -3
+					}
+				},
+				{
+					"choiceDescription": "Opt for cheaper, non-sustainable packaging options to reduce costs.",
+					"score": {
+						"environment": -3,
+						"social": -2,
+						"economic": 4
+					}
+				},
+				{
+					"choiceDescription": "Expand aggressively without considering the environmental or social impact of your growth.",
+					"score": {
+						"environment": -5,
+						"social": -6,
+						"economic": 8
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "7",
+			"chapterDescription": "Your startup is experiencing rapid growth, and you're strategizing for further expansion.",
+			"choices": [
+				{
+					"choiceDescription": "Implement sustainable business practices across all aspects of your operations.",
+					"score": {
+						"environment": 8,
+						"social": 7,
+						"economic": -4
+					}
+				},
+				{
+					"choiceDescription": "Focus solely on maximizing profits, disregarding any negative environmental or social impacts.",
+					"score": {
+						"environment": -4,
+						"social": -5,
+						"economic": 9
+					}
+				},
+				{
+					"choiceDescription": "Ignore sustainability concerns and pursue aggressive expansion at any cost.",
+					"score": {
+						"environment": -6,
+						"social": -7,
+						"economic": "+10"
+					}
+				}
+			]
+		},
+		{
+			"chapterId": "8",
+			"chapterDescription": "Your startup has become a dominant player in the market, and you're facing decisions about maintaining your position.",
+			"choices": [
+				{
+					"choiceDescription": "Invest in research and development to continue innovating and improving sustainability.",
+					"score": {
+						"environment": "+10",
+						"social": 8,
+						"economic": -5
+					}
+				},
+				{
+					"choiceDescription": "Acquire smaller, more sustainable competitors to expand your market share.",
+					"score": {
+						"environment": 6,
+						"social": 5,
+						"economic": 2
+					}
+				},
+				{
+					"choiceDescription": "Continue business as usual, prioritizing profit above all else.",
+					"score": {
+						"environment": -8,
+						"social": -9,
+						"economic": "+12"
+					}
+				}
+			]
+		}
+	]
+}

@@ -16,7 +16,7 @@ export default function DisplayChapter(
 ) {
 	const { state, actions } = useDisplayChapterLogic(chapterData)
 
-	return <Card onClick={actions.skipAnimation} sx={ChapterOuterBoxStyle}>
+	return <div onClick={actions.skipAnimation} style={ChapterOuterBoxStyle}>
 		<WriteGradually
 			variant={"h6"}
 			frequency={10}
@@ -44,5 +44,5 @@ export default function DisplayChapter(
 				</Button>
 			}) }
 		</Box>
-	</Card>;
+	</div>;
 }

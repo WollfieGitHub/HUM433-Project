@@ -1,8 +1,8 @@
 import {SxProps, Theme} from "@mui/material";
-import {CSSProperties} from "react";
 
-export const ScoreOuterBoxStyle: CSSProperties = {
-	width: "100%", height: "100%",
+export const GameOuterBoxStyle: SxProps<Theme> = {
+	marginTop: 10,
+	width: "80%", height: "80%",
 	display: "flex", flexDirection: "column",
 	justifyContent: "center", alignItems: "center"
 }
