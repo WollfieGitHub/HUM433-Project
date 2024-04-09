@@ -1,0 +1,242 @@
+[
+	{
+		"chapterId": 1,
+		"chapterDescription": "Your startup idea is still in the early stages. You need to prove its feasibility through a proof of concept. This is a crucial step that will set the foundation for your journey ahead. However, you must decide how you want to approach this stage, considering the ethical implications of your choices.",
+		"choices": [
+			{
+				"choiceDescription": "Utilize unsustainable materials for the proof of concept prototype.",
+				"score": {
+					"environment": -3,
+					"social": 0,
+					"economic": -2
+				}
+			},
+			{
+				"choiceDescription": "Partner with eco-friendly suppliers for the proof of concept prototype.",
+				"score": {
+					"environment": 2,
+					"social": 1,
+					"economic": -1
+				}
+			},
+			{
+				"choiceDescription": "Ignore environmental concerns for faster proof of concept development.",
+				"score": {
+					"environment": -4,
+					"social": -1,
+					"economic": 3
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 2,
+		"chapterDescription": "Congratulations! You have successfully validated your startup's concept with a minimum viable product (MVP). Now, you must decide how to proceed with production while considering the ethical implications of your choices.",
+		"choices": [
+			{
+				"choiceDescription": "Produce MVP using cheap labor without fair wages.",
+				"score": {
+					"environment": 0,
+					"social": -3,
+					"economic": 2
+				}
+			},
+			{
+				"choiceDescription": "Invest in fair labor practices for MVP production.",
+				"score": {
+					"environment": 1,
+					"social": 2,
+					"economic": -2
+				}
+			},
+			{
+				"choiceDescription": "Cut corners in MVP production to save costs.",
+				"score": {
+					"environment": -2,
+					"social": -1,
+					"economic": 3
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 3,
+		"chapterDescription": "Now that your startup has a validated concept, it's time to secure funding to scale your operations. However, you must choose the right source of funding, keeping in mind the ethical values of your startup.",
+		"choices": [
+			{
+				"choiceDescription": "Seek funding from investors known for unethical practices.",
+				"score": {
+					"environment": -1,
+					"social": -3,
+					"economic": 2
+				}
+			},
+			{
+				"choiceDescription": "Opt for crowdfunding to maintain independence.",
+				"score": {
+					"environment": 1,
+					"social": 2,
+					"economic": -1
+				}
+			},
+			{
+				"choiceDescription": "Approach impact investors focused on sustainability.",
+				"score": {
+					"environment": 2,
+					"social": 3,
+					"economic": -2
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 4,
+		"chapterDescription": "With funding secured, your startup is ready to move forward with prototyping and product development. This stage is critical as it sets the course for your product's quality and impact. However, you must navigate ethical dilemmas surrounding production methods and materials.",
+		"choices": [
+			{
+				"choiceDescription": "Use cheaper but environmentally harmful materials for prototyping.",
+				"score": {
+					"environment": -3,
+					"social": 0,
+					"economic": 2
+				}
+			},
+			{
+				"choiceDescription": "Invest in sustainable materials for prototyping despite higher costs.",
+				"score": {
+					"environment": 3,
+					"social": 1,
+					"economic": -3
+				}
+			},
+			{
+				"choiceDescription": "Outsource prototyping to countries with lax environmental regulations.",
+				"score": {
+					"environment": -2,
+					"social": -2,
+					"economic": 3
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 5,
+		"chapterDescription": "It's time to prepare for the launch of your product. This is your chance to make a strong impression on the market, but you must decide how to approach the launch while considering ethical principles.",
+		"choices": [
+			{
+				"choiceDescription": "Launch the product with minimal testing to save time and money.",
+				"score": {
+					"environment": -2,
+					"social": -1,
+					"economic": 3
+				}
+			},
+			{
+				"choiceDescription": "Conduct thorough testing to ensure product safety and quality before launch.",
+				"score": {
+					"environment": 1,
+					"social": 2,
+					"economic": -2
+				}
+			},
+			{
+				"choiceDescription": "Launch a marketing campaign that exaggerates product benefits.",
+				"score": {
+					"environment": 0,
+					"social": -2,
+					"economic": 2
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 6,
+		"chapterDescription": "Your startup has gained traction in the market, and it's time to consolidate your position. However, you must decide how to grow while maintaining your ethical standards.",
+		"choices": [
+			{
+				"choiceDescription": "Exploit legal loopholes to gain market dominance.",
+				"score": {
+					"environment": -1,
+					"social": -2,
+					"economic": 3
+				}
+			},
+			{
+				"choiceDescription": "Invest in CSR initiatives to improve brand reputation.",
+				"score": {
+					"environment": 2,
+					"social": 3,
+					"economic": -2
+				}
+			},
+			{
+				"choiceDescription": "Acquire smaller competitors to eliminate competition.",
+				"score": {
+					"environment": -1,
+					"social": -1,
+					"economic": 2
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 7,
+		"chapterDescription": "Your startup is experiencing rapid growth, but this comes with its own set of challenges. As you escalate your operations, you must consider the impact on the environment, society, and economy.",
+		"choices": [
+			{
+				"choiceDescription": "Expand operations without considering environmental impact.",
+				"score": {
+					"environment": -2,
+					"social": -1,
+					"economic": 3
+				}
+			},
+			{
+				"choiceDescription": "Implement sustainable practices across all aspects of the business.",
+				"score": {
+					"environment": 3,
+					"social": 2,
+					"economic": -3
+				}
+			},
+			{
+				"choiceDescription": "Cut costs by reducing employee benefits and wages.",
+				"score": {
+					"environment": 0,
+					"social": -3,
+					"economic": 2
+				}
+			}
+		]
+	},
+	{
+		"chapterId": 8,
+		"chapterDescription": "Your startup has reached a dominant position in the market, but maintaining this position requires careful consideration of ethical principles. As you strive for dominance, you must decide how to balance profitability with social and environmental responsibility.",
+		"choices": [
+			{
+				"choiceDescription": "Use aggressive tactics to maintain market dominance.",
+				"score": {
+					"environment": -2,
+					"social": -2,
+					"economic": 3
+				}
+			},
+			{
+				"choiceDescription": "Invest in innovation and sustainable practices to stay ahead.",
+				"score": {
+					"environment": 2,
+					"social": 3,
+					"economic": -3
+				}
+			},
+			{
+				"choiceDescription": "Exploit monopolistic position to maximize profits.",
+				"score": {
+					"environment": -1,
+					"social": -3,
+					"economic": 2
+				}
+			}
+		]
+	}
+]
