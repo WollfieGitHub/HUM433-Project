@@ -17,6 +17,10 @@ export default function Game(
 	if (state.displayFinalScore) {
 		return <DisplayScore score={state.score} />
 	} else {
-		return <DisplayChapter chapterData={gameData[state.currentChapterId]} onChoice={actions.handleChoice} />
+		return <DisplayChapter
+			chapterData={gameData[state.currentChapterId]}
+			onChoice={actions.handleChoice}
+			savings={state.score.economic}
+		/>
 	}
 }

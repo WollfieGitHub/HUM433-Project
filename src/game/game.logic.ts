@@ -1,7 +1,7 @@
 import {GameChoice, GameData, GameScore} from "./game.types";
 import {useCallback, useEffect, useState} from "react";
 
-const INITIAL_SCORE = {environment: 0, economic: 0, social: 0}
+const INITIAL_SCORE = {environment: 0, economic: 5, social: 0}
 
 export function useGameLogic(
 	gameData: GameData,
