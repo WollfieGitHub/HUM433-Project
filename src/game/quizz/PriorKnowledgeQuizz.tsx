@@ -2,10 +2,12 @@ import {usePriorKnowledgeQuizzLogic} from "./priorKnowledgeQuizz.logic";
 import PriorKnowledgeQuizzQuestion from "./question/PriorKnowledgeQuizzQuestion";
 
 const questions = [
-	"Do you like quizzes?",
 	"How familiar are you with business theory?",
-	"Are you a cat person?",
-
+	"How familiar are you with entrepreneurship?",
+	"How familiar are you with ethics?",
+	"How concerned would you say you are you with the environment?",
+	"How concerned would you say you are you with money?",
+	"How important are social problems to you?",
 ]
 
 interface PriorKnowledgeQuizzProps {

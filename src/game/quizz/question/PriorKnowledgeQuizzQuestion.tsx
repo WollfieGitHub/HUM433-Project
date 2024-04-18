@@ -42,14 +42,16 @@ export default function PriorKnowledgeQuizzQuestion(
 		style={{ opacity: (mounted ? 1 : 0) }}
 		sx={{
 			backgroundColor: theme.palette.primary.main + "10",
-			margin: 20, padding: 7.5,
+			margin: 10, padding: 7.5,
 			transition: "opacity 300ms ease-in-out",
+			boxSizing: "border-box",
 		}}
 	>
 		<Typography variant={"h3"}>{displayedQuestion}</Typography>
 		<Box sx={{
 			display: "flex", flexDirection: "row",
 			justifyContent: "center", alignItems: "center",
+			marginTop: 1,
 		}}>
 			<Typography variant={"h6"}>Not at all</Typography>
 			<Box>
@@ -70,6 +72,9 @@ export default function PriorKnowledgeQuizzQuestion(
 			</Box>
 			<Typography variant={"h6"}>A lot</Typography>
 		</Box>
+		<Typography variant={"subtitle1"} m={1} color={"text.secondary"}>
+			Your answers will not be registered and are for you only.
+		</Typography>
 		<Button
 			size={"large"}
 			variant={"contained"}
