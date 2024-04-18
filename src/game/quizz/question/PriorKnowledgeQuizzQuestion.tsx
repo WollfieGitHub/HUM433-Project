@@ -1,9 +1,10 @@
 import {Box, Button, Card, Radio, Typography, useTheme} from "@mui/material";
-import {ChangeEvent, useEffect, useState} from "react";
+import {ChangeEvent, ReactNode, useEffect, useState} from "react";
 
 interface PriorKnowledgeQuizzQuestionProps {
 	question: string,
 	onConfirm: (rating: number) => void;
+	footer: ReactNode;
 }
 
 const INITIAL_RADIO_SIZE = 20;
@@ -12,7 +13,7 @@ const RADIO_SIZE_MULTIPLIER = 5;
 const values = [0, 1, 2, 3, 4];
 
 export default function PriorKnowledgeQuizzQuestion(
-	{question, onConfirm}: PriorKnowledgeQuizzQuestionProps,
+	{question, onConfirm, footer}: PriorKnowledgeQuizzQuestionProps,
 ) {
 	const [mounted, setMounted] = useState(false);
 	const [displayedQuestion, setDisplayedQuestion] = useState<string|null>(null);
@@ -83,5 +84,12 @@ export default function PriorKnowledgeQuizzQuestion(
 		>
 			Confirm
 		</Button>
+		<Box style={{
+			display: "flex", flexDirection: "column",
+			justifyContent: "center", alignItems: "center",
+			width: "100%",
+		}}>
+			{ footer }
+		</Box>
 	</Card>;
 }

@@ -9,6 +9,7 @@ import GAME_DATA_4 from "./resources/game_data_4.json"
 import {randomUpTo} from "./utils";
 import {GameData} from "./game/game.types";
 import {Typography, useTheme} from "@mui/material";
+import Title from "./game/Title";
 
 const CORNER_SIZE = 200;
 const CORNER_INCREMENT = 20;
@@ -31,10 +32,7 @@ function App() {
       display: "flex", flexDirection: "column",
       justifyContent: "start", alignItems: "center"
     }}>
-      <Typography variant={"h5"} component={"span"} margin={5}>
-        {"HUM433 - How People Learn - "}
-        <span style={{color: theme.palette.primary.main}}>Designing Learning Tools</span>
-      </Typography>
+      <Title/>
       <Game gameData={GAME_DATA[randomUpTo(GAME_DATA.length)]}/>
       <div style={{
         position: "absolute", top: -CORNER_SIZE / 2, right: -CORNER_SIZE / 2,

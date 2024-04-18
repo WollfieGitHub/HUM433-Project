@@ -16,13 +16,18 @@ export function usePriorKnowledgeQuizzLogic(
 			}
 		});
 	}, [onFinish, questionCount])
+
+	const handleBack = useCallback(() => {
+		setQuestionIndex(prev => prev-1)
+	}, [])
 	
 	return {
 		state: {
 			questionIndex
 		},
 		actions: {
-			handleQuestionConfirmation
+			handleQuestionConfirmation,
+			handleBack
 		},
 	};
 }
