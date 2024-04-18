@@ -133,16 +133,14 @@
 						"social": 3,
 						"economic": -2
 					}
-				},
-				{
+				}, {
 					"choiceDescription": "Focus on aggressive pricing and promotions to gain market share.",
 					"score": {
 						"environment": -2,
 						"social": -1,
 						"economic": 3
 					}
-				},
-				{
+				}, {
 					"choiceDescription": "Launch quietly without emphasizing social or environmental aspects to avoid alienating potential customers.",
 					"score": {
 						"environment": -1,
@@ -163,16 +161,14 @@
 						"social": 3,
 						"economic": -2
 					}
-				},
-				{
+				}, {
 					"choiceDescription": "Implement cost-cutting measures that may harm employees or suppliers.",
 					"score": {
 						"environment": -1,
 						"social": -2,
 						"economic": 3
 					}
-				},
-				{
+				}, {
 					"choiceDescription": "Acquire smaller competitors to increase market dominance.",
 					"score": {
 						"environment": -1,

@@ -5,6 +5,8 @@ import DisplayScore from "./score-display/displayScore";
 import InitialDisplay from "./initial-display/initialDisplay";
 import {Card} from "@mui/material";
 import {GameOuterBoxStyle} from "./game.style";
+import CaseFile from "./chapter-display/case-files/CaseFile";
+import PriorKnowledgeQuizz from "./quizz/PriorKnowledgeQuizz";
 
 interface GameProps {
 	gameData: GameData;
@@ -14,6 +16,8 @@ export default function Game(
 	{ gameData }: GameProps,
 ) {
 	const {state, actions} = useGameLogic(gameData);
+
+	return <PriorKnowledgeQuizz onFinish={() => {}}/>
 
 	return <Card sx={GameOuterBoxStyle}>
 		{ (function() {

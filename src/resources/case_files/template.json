@@ -1,0 +1,12 @@
+[
+	{
+		"caseFileId": "A unique identifier for the case file",
+		"title": "The title of the case file",
+		"category": "A category to sort the case file (for example, \"Human Relation\" when it comes to hiring someone)",
+		"description": "The description of the case",
+		"questions": [
+			"The ethical questions that are to be considered for this case",
+			"Another question to consider"
+		]
+	}
+]
