@@ -18,13 +18,14 @@ export default function PriorKnowledgeQuizzQuestion(
 	const [mounted, setMounted] = useState(false);
 	const [displayedQuestion, setDisplayedQuestion] = useState<string|null>(null);
 
-	const [selectedValue, setSelectedValue] = useState(values[0]);
+	const [selectedValue, setSelectedValue] = useState<number|null>(null);
 	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
 		setSelectedValue(parseInt(event.target.value, 10));
 	};
 
 	useEffect(() => {
 		setMounted(false);
+		setSelectedValue(null);
 
 		return () => setMounted(false);
 	}, [question]);
@@ -46,6 +47,7 @@ export default function PriorKnowledgeQuizzQuestion(
 			margin: 10, padding: 7.5,
 			transition: "opacity 300ms ease-in-out",
 			boxSizing: "border-box",
+			maxWidth: 1000,
 		}}
 	>
 		<Typography variant={"h3"}>{displayedQuestion}</Typography>
@@ -58,6 +60,7 @@ export default function PriorKnowledgeQuizzQuestion(
 			<Box>
 				{values.map((value, i) =>
 					<Radio
+						style={{ opacity: 4/8 + (i / 8) }}
 						value={value.toString()}
 						checked={selectedValue === value}
 						onChange={handleChange}
@@ -74,12 +77,13 @@ export default function PriorKnowledgeQuizzQuestion(
 			<Typography variant={"h6"}>A lot</Typography>
 		</Box>
 		<Typography variant={"subtitle1"} m={1} color={"text.secondary"}>
-			Your answers will not be registered and are for you only.
+			Your answers will not be registered and are for your eyes only.
 		</Typography>
 		<Button
+			disabled={selectedValue === null}
 			size={"large"}
 			variant={"contained"}
-			onClick={() => onConfirm(selectedValue)}
+			onClick={() => onConfirm(selectedValue!)}
 			sx={{borderRadius: "25px", marginTop: 5}}
 		>
 			Confirm
