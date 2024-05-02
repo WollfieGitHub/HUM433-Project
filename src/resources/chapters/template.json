@@ -1,6 +1,6 @@
 [
 	{
-		"chapterId": "The id of the chapter (unique for each chapter",
+		"chapterId": "The id of the chapter (unique for each chapter)",
 		"description": "The description of the situation of the chapter",
 		"choices": [
 			{
@@ -13,7 +13,7 @@
 				},
 				"ethicsCommitteeAdvocacy": "A description of why a member of the ethics committee would choose this decision, so the pros and cons of this decision",
 				"correspondingCaseFileIds": [
-					1, 2, 3, "The identifiers of the case files that might be useful for this chapter"
+					84781, 5153, 558691, "The identifiers of the case files that might be useful for this chapter"
 				]
 			}
 		]

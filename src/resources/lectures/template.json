@@ -1,0 +1,8 @@
+[
+	{
+		"caseFileId": "A unique identifier for the lecture",
+		"chapterId": "The chapter this case file is linked to",
+		"title": "The title of the lecture",
+		"content": "The content of the lecture, formatted in markdown"
+	}
+]

@@ -21,10 +21,6 @@ export default function Game(
 
 	const [quizzComplete, setQuizzComplete] = useState(false);
 
-	return <Card sx={GameOuterBoxStyle}>
-		<GameBackground/>
-	</Card>
-
 	if (!quizzComplete) {
 		return <PriorKnowledgeQuizz onFinish={() => setQuizzComplete(true)}/>
 	} else {
