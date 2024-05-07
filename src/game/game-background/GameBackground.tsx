@@ -9,7 +9,7 @@ import {Box, CardMedia} from "@mui/material";
 import {CSSProperties, useState} from "react";
 
 interface GameBackgroundProps {
-
+	onComplete: () => void;
 }
 
 type GameState = "idle"
@@ -20,11 +20,14 @@ type GameState = "idle"
 	| "case-studies-lifted"
 
 export default function GameBackground(
-	{}: GameBackgroundProps,
+	{ onComplete }: GameBackgroundProps,
 ) {
 	const [state, setState] = useState<GameState>("idle");
 
-	return <Box style={{position: "relative", height: "100%", width: "auto"}}>
+	return <Box
+		onClick={onComplete}
+		style={{position: "relative", height: "100%", width: "auto"}}
+	>
 		<HoverZone
 			style={{
 				position: "absolute",

@@ -29,7 +29,7 @@ function App() {
       position: "relative",
       width: "100%", height: "100%",
       display: "flex", flexDirection: "column",
-      justifyContent: "start", alignItems: "center"
+      justifyContent: "space-evenly", alignItems: "center"
     }}>
       <Title/>
       <Game gameData={GAME_DATA[randomUpTo(GAME_DATA.length)]}/>

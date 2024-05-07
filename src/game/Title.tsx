@@ -16,7 +16,7 @@ export default function Title(
 
 	const theme = useTheme();
 
-	return <Typography variant={"h5"} component={"span"} margin={5} style={{
+	return <Typography variant={"h5"} component={"span"} style={{
 		transition: "transform 600ms ease-in-out",
 		transform: (mounted ? "translateY(0)" : "translateY(-200px)")
 	}}>

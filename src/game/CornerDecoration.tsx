@@ -1,18 +1,13 @@
 import React from "react";
 import {useTheme} from "@mui/material";
 
-interface CornerDecorationProps {
-
-}
-
-
 const CORNER_SIZE = 200;
 const CORNER_INCREMENT = 20;
 
-export default function CornerDecoration(
-	{}: CornerDecorationProps,
-) {
+export default function CornerDecoration() {
 	const theme = useTheme();
+
+	const baseIndex = -4;
 
 	return <div style={{
 		overflow: "hidden", position: "absolute",
@@ -25,7 +20,7 @@ export default function CornerDecoration(
 		height: CORNER_SIZE, width: CORNER_SIZE,
 		borderRadius: "50%",
 		backgroundColor: theme.palette.primary.main,
-		zIndex: 20,
+		zIndex: baseIndex,
 	}}/>
 
 	<div style={{
@@ -34,7 +29,7 @@ export default function CornerDecoration(
 		height: CORNER_SIZE + CORNER_INCREMENT, width: CORNER_SIZE + CORNER_INCREMENT,
 		borderRadius: "50%",
 		backgroundColor: "white",
-		zIndex: 19,
+		zIndex: baseIndex-1,
 	}}/>
 
 	<div style={{
@@ -46,7 +41,7 @@ export default function CornerDecoration(
 		width: CORNER_SIZE + 2 * (CORNER_INCREMENT / 1.25),
 		borderRadius: "50%",
 		backgroundColor: theme.palette.primary.main,
-		zIndex: 18,
+		zIndex: baseIndex-2,
 	}}/>
 
 	<div style={{
@@ -55,7 +50,7 @@ export default function CornerDecoration(
 		height: CORNER_SIZE / 2, width: CORNER_SIZE / 2,
 		borderRadius: "50%",
 		backgroundColor: theme.palette.primary.main,
-		zIndex: 20,
+		zIndex: baseIndex,
 	}}/>
 
 	<div style={{
@@ -64,7 +59,7 @@ export default function CornerDecoration(
 		height: CORNER_SIZE, width: CORNER_SIZE,
 		borderRadius: "0", transform: "rotateZ(45deg)",
 		backgroundColor: theme.palette.primary.main,
-		zIndex: 20,
+		zIndex: baseIndex,
 	}}/>
 </div>
 

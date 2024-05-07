@@ -1,20 +1,17 @@
-import {usePriorKnowledgeQuizzLogic} from "./priorKnowledgeQuizz.logic";
+import {QuizzCallback, usePriorKnowledgeQuizzLogic} from "./priorKnowledgeQuizz.logic";
 import PriorKnowledgeQuizzQuestion from "./question/PriorKnowledgeQuizzQuestion";
 import {Box, Button, MobileStepper, useTheme} from "@mui/material";
 import React, {useEffect, useRef} from "react";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@mui/icons-material";
 
 const questions = [
-	"How familiar are you with business theory?",
 	"How familiar are you with entrepreneurship?",
-	"How familiar are you with ethics?",
-	"How concerned would you say you are you with the environment?",
-	"How concerned would you say you are you with money?",
-	"How important are social problems to you?",
+	"How familiar are you with the different stage of the startup lifecycle?",
+	"How familiar are you with the terms \"Seed, VC, Angel\", used in the context of entrepreneurship?",
 ];
 
 interface PriorKnowledgeQuizzProps {
-	onFinish: () => void,
+	onFinish: QuizzCallback,
 }
 
 export default function PriorKnowledgeQuizz(

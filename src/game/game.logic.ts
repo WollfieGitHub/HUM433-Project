@@ -2,11 +2,24 @@ import {GameChoice, GameData, GameScore} from "./game.types";
 import {useCallback, useEffect, useState} from "react";
 import {randomUpTo} from "../utils";
 
+const GameSteps = [
+	"Questionnaire",
+	"IntroToEntrepreneurship",
+	"ChapterDashboard",
+	"Game",
+	"GeneralDebrief"
+] as const
+type GameStep = typeof GameSteps[number];
+type GameState = {
+	step: GameStep, args?: any
+}
+
 const INITIAL_SCORE = {environment: 0, economic: 3+randomUpTo(2), social: 0}
 
 export function useGameLogic(
 	gameData: GameData,
 ) {
+	const [currentState, setCurrentState] = useState<GameState>({ step: GameSteps[0] });
 	const [initialStateDisplayed, setInitialStateDisplayed] = useState(false);
 	const [currentChapterId, setCurrentChapterId] = useState(0);
 
@@ -28,18 +41,25 @@ export function useGameLogic(
 		setInitialStateDisplayed(true);
 	}, [])
 
-	const displayFinalScore = currentChapterId === gameData.chapters.length
-	
+	const chapterCount = gameData.chapters.length;
+	const displayFinalScore = currentChapterId === chapterCount
+
 	return {
 		state: {
 			currentChapterId,
 			displayFinalScore,
 			score,
-			initialStateDisplayed
+			initialStateDisplayed,
+			currentState
 		},
 		actions: {
 			handleChoice,
-			onInitialDisplayConfirm
+			onInitialDisplayConfirm,
+			setCurrentState,
+			setCurrentChapterId
 		},
+		values: {
+			chapterCount
+		}
 	};
 }

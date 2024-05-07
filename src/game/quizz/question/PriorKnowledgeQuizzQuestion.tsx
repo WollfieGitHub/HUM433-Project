@@ -10,7 +10,7 @@ interface PriorKnowledgeQuizzQuestionProps {
 const INITIAL_RADIO_SIZE = 20;
 const RADIO_SIZE_MULTIPLIER = 5;
 
-const values = [0, 1, 2, 3, 4];
+export const values = [0, 1, 2, 3, 4];
 
 export default function PriorKnowledgeQuizzQuestion(
 	{question, onConfirm, footer}: PriorKnowledgeQuizzQuestionProps,
@@ -44,10 +44,10 @@ export default function PriorKnowledgeQuizzQuestion(
 		style={{ opacity: (mounted ? 1 : 0) }}
 		sx={{
 			backgroundColor: theme.palette.primary.main + "10",
-			margin: 10, padding: 7.5,
+			padding: 7.5,
 			transition: "opacity 300ms ease-in-out",
 			boxSizing: "border-box",
-			maxWidth: 1000,
+			width: "80%"
 		}}
 	>
 		<Typography variant={"h3"}>{displayedQuestion}</Typography>
