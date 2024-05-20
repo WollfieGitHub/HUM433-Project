@@ -1,20 +1,25 @@
 import {useGameLogic} from "./game.logic";
 import {GameData} from "./game.types";
 import DisplayScore from "./score-display/displayScore";
-import InitialDisplay from "./initial-display/initialDisplay";
 import {Card} from "@mui/material";
 import {GameOuterBoxStyle} from "./game.style";
 import PriorKnowledgeQuizz from "./quizz/PriorKnowledgeQuizz";
-import GameBackground from "./game-background/GameBackground";
 import IntroductionToEntrepreneurship from "./introduction/IntroductionToEntrepreneurship";
 import ChapterDashboard from "./chapter-dashboard/ChapterDashboard";
 import GeneralDebrief from "./GeneralDebrief";
+import Game from "./game/Game";
+import GameIntroduction from "./intro/GameIntroduction";
 
 interface GameProps {
 	gameData: GameData;
 }
 
-export default function Game(
+const ScorePerChoice = [
+	{environment: -8, economic: 5, social: 3},
+	{environment: 8, economic: -3.5, social: 2},
+];
+
+export default function AppManager(
 	{gameData}: GameProps,
 ) {
 	const {
@@ -23,7 +28,9 @@ export default function Game(
 		values,
 	} = useGameLogic(gameData);
 
-	if (state.currentState.step === "Questionnaire") {
+	if (state.currentState.step === "GameIntroduction") {
+		return <GameIntroduction onComplete={() => actions.setCurrentState({step: "Questionnaire"})}/>;
+	} else if (state.currentState.step === "Questionnaire") {
 		return <PriorKnowledgeQuizz onFinish={totalRating => actions.setCurrentState({
 			step: "IntroToEntrepreneurship", args: totalRating,
 		})}/>;
@@ -34,35 +41,26 @@ export default function Game(
 		/>;
 	} else if (state.currentState.step === "ChapterDashboard") {
 		return <ChapterDashboard
-			chaptersUnlockedUpTo={0}
+			chaptersUnlockedUpTo={4}
 			chapterCount={values.chapterCount}
 			onChapterChosen={idx => {
 				actions.setCurrentState({step: "Game"});
-				actions.setCurrentChapterId(idx);
+				actions.setCurrentChapterId(0);
 			}}
 		/>;
-	} else if (state.currentState.step === "GeneralDebrief") {
-		return <GeneralDebrief onComplete={() => actions.setCurrentState({ step: "ChapterDashboard" })}/>;
+	} else if (state.currentState.step === "Score") {
+		return <DisplayScore score={state.score}/>;
 	} else {
 		return <Card sx={GameOuterBoxStyle}>
-			{(function () {
-				if (!state.initialStateDisplayed) {
-					return <InitialDisplay
-						startupName={gameData.startupName}
-						startupDescription={gameData.startupDescription}
-						onConfirm={actions.onInitialDisplayConfirm}
-					/>;
-				} else if (state.displayFinalScore) {
-					return <DisplayScore score={state.score}/>;
-				} else {
-					return <GameBackground onComplete={() => actions.setCurrentState({ step: "GeneralDebrief" })}/>;
-					// return <DisplayChapter
-					// 	chapterData={gameData.chapters[state.currentChapterId]}
-					// 	onChoice={actions.handleChoice}
-					// 	savings={state.score.economic}
-					// />
-				}
-			})()}
+			<Game
+				onComplete={(choice) => {
+				actions.setCurrentState({step: "Score"});
+				actions.setScore(ScorePerChoice[choice]);
+			}}
+				onChapterSelectionClick={() => {
+					actions.setCurrentState({step: "ChapterDashboard"})
+				}}
+			/>
 		</Card>;
 	}
 }

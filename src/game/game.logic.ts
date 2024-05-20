@@ -3,11 +3,12 @@ import {useCallback, useEffect, useState} from "react";
 import {randomUpTo} from "../utils";
 
 const GameSteps = [
+	"GameIntroduction",
 	"Questionnaire",
 	"IntroToEntrepreneurship",
 	"ChapterDashboard",
 	"Game",
-	"GeneralDebrief"
+	"Score",
 ] as const
 type GameStep = typeof GameSteps[number];
 type GameState = {
@@ -42,12 +43,10 @@ export function useGameLogic(
 	}, [])
 
 	const chapterCount = gameData.chapters.length;
-	const displayFinalScore = currentChapterId === chapterCount
 
 	return {
 		state: {
 			currentChapterId,
-			displayFinalScore,
 			score,
 			initialStateDisplayed,
 			currentState
@@ -56,7 +55,8 @@ export function useGameLogic(
 			handleChoice,
 			onInitialDisplayConfirm,
 			setCurrentState,
-			setCurrentChapterId
+			setCurrentChapterId,
+			setScore
 		},
 		values: {
 			chapterCount

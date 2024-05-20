@@ -16,6 +16,19 @@ function range(from: number, to: number) {
 	return result;
 }
 
+const chapterNames = [
+	"Idea Generation and Validation",
+	"Building a Team",
+	"Creating a Business Plan",
+	"Product Development",
+	"Getting an Office",
+	"Funding and Investment",
+	"Market Entry and Launch",
+	"Customer Acquisition and Retention",
+	"Growth and Scaling",
+	"Maturity and Exit Strategy",
+]
+
 export default function ChapterDashboard(
 	{ chapterCount, onChapterChosen, chaptersUnlockedUpTo }: ChapterDashboardProps,
 ) {
@@ -23,39 +36,50 @@ export default function ChapterDashboard(
 
 	const theme = useTheme();
 
+	console.log(theme.palette.primary.main)
+
 	return <Paper style={{ width: "70%", padding: 20 }}>
-		<Grid container columnGap={5} rowGap={5}>
-			{ range(0, chapterCount+fakeChapterCount).map(chapterIdx =>
-				<Grid item xs={2} style={{ aspectRatio: "1/1" }}>
+		<Grid container columnGap={5} rowGap={5} style={{ alignItems: "center", justifyContent: "center" }}>
+			{ range(0, chapterCount+fakeChapterCount).map(chapterIdx => {
+				const disabled = chapterIdx > chaptersUnlockedUpTo;
+				const last = chapterIdx === chaptersUnlockedUpTo;
+
+				return <Grid item xs={2} style={{aspectRatio: "1/1"}}>
 					<Card
 						style={{
+							padding: 2,
 							height: "100%",
-							border: `solid 2px ${(chapterIdx > chaptersUnlockedUpTo) ? "#AAAAAA" : theme.palette.primary.main}`,
-							opacity: (chapterIdx > chaptersUnlockedUpTo ? 0.6 : 1),
-							backgroundColor: (chapterIdx > chaptersUnlockedUpTo ? "#EEEEEE" : undefined)
+							border: `solid 2px ${(disabled) ? "#AAAAAA" : theme.palette.primary.main}`,
+							opacity: (disabled ? 0.6 : 1),
+							backgroundColor: (disabled ? "#EEEEEE" : (last ? theme.palette.primary.main + "20" : undefined))
 						}}
 					>
 						<CardActionArea
-							disabled={chapterIdx > chaptersUnlockedUpTo}
-							style={{ width: "100%", height: "100%" }}
+							disabled={disabled}
+							style={{width: "100%", height: "100%"}}
 							onClick={() => {
-							if (chapterIdx < chapterCount) {
-								onChapterChosen(chapterIdx);
-							} else {
-								onChapterChosen(randomUpTo(chapterCount));
-							}
-						}}
+								if (chapterIdx < chapterCount) {
+									onChapterChosen(chapterIdx);
+								} else {
+									onChapterChosen(randomUpTo(chapterCount));
+								}
+							}}
 						>
 							<Typography
 								variant={"h5"}
-								color={chapterIdx > chaptersUnlockedUpTo ? theme.palette.text.disabled : undefined}
+								component={"span"}
+								color={disabled ? theme.palette.text.disabled : undefined}
 							>
-								{ `Chapter ${chapterIdx+1}` }
+								{`Chapter ${chapterIdx + 1}:`}
+								<br/>
+								<Typography component={"span"} variant={"h6"}>
+									{chapterNames[chapterIdx]}
+								</Typography>
 							</Typography>
 						</CardActionArea>
 					</Card>
-				</Grid>
-			) }
+				</Grid>;
+			}) }
 		</Grid>
 	</Paper>;
 }

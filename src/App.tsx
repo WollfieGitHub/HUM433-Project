@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Game from "./game/game";
+import AppManager from "./game/appManager";
 import GAME_DATA_0 from "./resources/game_data_0.json"
 import GAME_DATA_1 from "./resources/game_data_1.json"
 import GAME_DATA_2 from "./resources/game_data_2.json"
@@ -32,7 +32,7 @@ function App() {
       justifyContent: "space-evenly", alignItems: "center"
     }}>
       <Title/>
-      <Game gameData={GAME_DATA[randomUpTo(GAME_DATA.length)]}/>
+      <AppManager gameData={GAME_DATA[randomUpTo(GAME_DATA.length)]}/>
       <CornerDecoration/>
     </div>
   );
