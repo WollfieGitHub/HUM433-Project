@@ -50,12 +50,12 @@ export default function ChapterDashboard(
 							padding: 2,
 							height: "100%",
 							border: `solid 2px ${(disabled) ? "#AAAAAA" : theme.palette.primary.main}`,
-							opacity: (disabled ? 0.6 : 1),
+							opacity: (disabled || !last ? 0.6 : 1),
 							backgroundColor: (disabled ? "#EEEEEE" : (last ? theme.palette.primary.main + "20" : undefined))
 						}}
 					>
 						<CardActionArea
-							disabled={disabled}
+							disabled={disabled || !last}
 							style={{width: "100%", height: "100%"}}
 							onClick={() => {
 								if (chapterIdx < chapterCount) {
