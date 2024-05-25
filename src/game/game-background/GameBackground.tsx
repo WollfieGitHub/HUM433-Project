@@ -45,6 +45,8 @@ const CaseStudies = [
 	},
 ];
 
+const environmentalSustainability = "Environmental sustainability and business ethics are intrinsically linked. Companies have a moral duty to protect the environment and preserve natural resources for future generations. Unsustainable practices that degrade the environment or deplete finite resources are unethical, as they prioritize short-term profits over long-term societal well-being. Consumers, investors, and the general public increasingly demand that companies adopt sustainable and environmentally responsible practices. Failure to do so can damage a company's reputation, erode public trust, and alienate stakeholders, ultimately impacting the company’s long-term viability. In summary, integrating environmental ethics into corporate policies and practices is crucial for maintaining public trust, stakeholder support, and long-term business success while minimizing environmental harm."
+
 export default function GameBackground(
 	{onCommittee, onChoice}: GameBackgroundProps,
 ) {
@@ -52,6 +54,7 @@ export default function GameBackground(
 	const [currentChoice, setCurrentChoice] = useState<number | null>(null);
 	const [showInitialSituation, setShowInitialSituation] = useState(true);
 	const [showCaseStudy, setShowCaseStudy] = useState(false);
+	const [showEnvSusDialog, setShowEnvSusDialog] = useState(false);
 
 	const theme = useTheme();
 
@@ -179,7 +182,14 @@ export default function GameBackground(
 				justifyContent: "center", alignItems: "center",
 			}}
 		>
-			<List style={{
+			{ showEnvSusDialog ? <Box sx={{ padding: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 1 }}>
+				<Typography>
+					{ environmentalSustainability }
+				</Typography>
+				<Button variant={"text"} target={"_blank"} href={"https://www.imd.org/reflections/how-business-ethics-drives-sustainable-success/"}>
+					Additional Resources
+				</Button>
+			</Box> : <List style={{
 				padding: 0,
 				borderRadius: "8px",
 				border: `1px solid ${theme.palette.primary.main}`
@@ -191,8 +201,16 @@ export default function GameBackground(
 						</ListItemButton>
 					</ListItem>,
 				)}
-			</List>
-			<Button variant={"outlined"} style={{margin: 10}} onClick={() => setShowCaseStudy(false)}>
+				<ListItem>
+					<ListItemButton onClick={() => setShowEnvSusDialog(true)}>
+						{ `• Environmental Sustainability` }
+					</ListItemButton>
+				</ListItem>
+			</List> }
+			<Button variant={"outlined"} style={{margin: 10}} onClick={() => {
+				setShowEnvSusDialog(false)
+				setShowCaseStudy(false)
+			}}>
 				Close
 			</Button>
 		</Box>}

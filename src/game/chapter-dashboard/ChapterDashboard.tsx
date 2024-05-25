@@ -17,16 +17,16 @@ function range(from: number, to: number) {
 }
 
 const chapterNames = [
-	"Idea Generation and Validation",
-	"Building a Team",
-	"Creating a Business Plan",
-	"Product Development",
-	"Getting an Office",
-	"Funding and Investment",
-	"Market Entry and Launch",
-	"Customer Acquisition and Retention",
-	"Growth and Scaling",
-	"Maturity and Exit Strategy",
+	"Fair-Labor practices",
+	"Anti-Corruption and Bribery",
+	"Environmental Sustainability",
+	"Ethical Leadership",
+	"Diversity and Inclusion",
+	"Supply Chain Ethics",
+	"Corporate Social Responsibility (CSR)",
+	"Philanthropy and Community Engagement",
+	"Business Ethic",
+	"Consumer Rights and Privacy",
 ]
 
 export default function ChapterDashboard(

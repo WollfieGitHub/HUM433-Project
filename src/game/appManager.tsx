@@ -41,7 +41,7 @@ export default function AppManager(
 		/>;
 	} else if (state.currentState.step === "ChapterDashboard") {
 		return <ChapterDashboard
-			chaptersUnlockedUpTo={4}
+			chaptersUnlockedUpTo={2}
 			chapterCount={values.chapterCount}
 			onChapterChosen={idx => {
 				actions.setCurrentState({step: "Game"});
