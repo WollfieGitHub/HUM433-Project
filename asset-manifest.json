@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.d6199c89.js",
+    "main.js": "/static/js/main.4eddbac4.js",
     "static/media/prototype_background-committee_opened.png": "/static/media/prototype_background-committee_opened.ba3f565a57f5fd688b22.png",
     "static/media/prototype_background-case_studies-lifted.png": "/static/media/prototype_background-case_studies-lifted.e4b68bebb4d5f1f7a77b.png",
     "static/media/prototype_background-right_paper-lifted.png": "/static/media/prototype_background-right_paper-lifted.d631e3cd65fae6af12be.png",
@@ -11,10 +11,10 @@
     "static/media/prototype_background-ethics_comitee.png": "/static/media/prototype_background-ethics_comitee.24491e4bf3a5c641d1b9.png",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.d6199c89.js.map": "/static/js/main.d6199c89.js.map"
+    "main.4eddbac4.js.map": "/static/js/main.4eddbac4.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.d6199c89.js"
+    "static/js/main.4eddbac4.js"
   ]
 }
